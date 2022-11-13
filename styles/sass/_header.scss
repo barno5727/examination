@@ -1,0 +1,87 @@
+header#main-header {
+  
+    background-color: $whiteyellow;
+    padding: 2rem;
+    box-shadow: 0 0 50px #1a1717;
+    scroll-behavior: smooth;
+
+    .container.flex {
+        justify-content: space-between;
+        font-weight: lighter;
+    }
+    
+    .flex {
+        gap: 3rem;
+        align-items: center;
+        padding: 0 4rem;
+    }
+    
+    img {
+        width: 115px;
+        height: 26px;
+    }
+}
+
+
+.searching {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    gap: 5px;
+   
+    
+    .search-btn {
+        width: 250px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+         border: none;
+        background-color: $white;
+        border-radius: 45px;
+
+    }
+
+    button {
+        width: 250px;
+        height: 40px;
+        outline: none;
+        color: $white;
+        border: 2px solid $darkblue;
+        background-color: $darkblue;
+        border-radius: 45px;
+    }
+
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    background-color: $white;
+    color: $darkblue;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 5px;
+    display: none;
+}
+
+.dropdown-menu li {
+    background-color: $darkblue;
+    color: $white;
+    width: 50px;
+    padding: 3px;
+    margin: 5px 0;
+    transition: 0.3s text-indent ease-in-out;
+}
+
+
+.dropdown-menu li:hover {
+    text-indent: 10px;
+}
+ 
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
